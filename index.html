@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopify</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="card">
+        <div class="img">
+          <img src="https://dev1-cdn.helioswatchstore.com/easyslide/TB-2_1.jpg" alt="">
+        </div>
+        <div class="about">
+          <h2>Tissot</h2>
+          <h3>unisex | T-sport</h3>
+          <h4>Price:38500 <span>45000</span>    <h6>*limited offer</h6></h4>
+          <div class="features">
+            <h4>Watch Glass/Crystal: Sapphire Glass</h4>
+            <h4>Warranty Time Period: 24 Months</h4>
+            <h4>Special Features: Date, Water Resistant</h4> 
+          </div>
+          <div class="buttons">
+            <button id="cart" onclick="change()"class="cart">Add to cart</button>
+          <button class="wish">Wishlist</button>
+          </div>
+        </div>
+        
+      </section>
+
+    </section>
+    <script>
+      let c = 1
+      function change(){
+        if(c%2!==0){
+          const cartButton = document.getElementById('cart').textContent="Added to Cart!"
+        }
+        else{
+          const cartButton = document.getElementById('cart').textContent="Add to Cart"
+        }
+        c+=1
+        
+      }
+    </script>
+  </body>
+  
+</html>
