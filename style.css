@@ -24,6 +24,7 @@ html,body{
   border: 5px solid black;
   box-shadow: 15px 15px rgba(255, 255, 255, 0.452);
 }
+
 .img{
   width:500px;
   height:100%;
@@ -72,17 +73,18 @@ span{
   flex-direction: column;
   gap:4px;
   margin-top: 15px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 15px;
 
 }
 .features h4{
   line-height: 25px;
   margin-left: 14px;
-  font-size: 22px;
+  font-size: 20px;
   transition: all 3ms ease-in-out;
   cursor: pointer;
   font-weight: 500;
+
 
 }
 .features h4:hover{
@@ -97,6 +99,7 @@ button{
   padding:10px 15px;
   font-size: 20px;
   border-radius: 20px;
+  cursor: pointer;
 }
 button:hover{
   transform: scale(1.07);
@@ -108,9 +111,15 @@ button:hover{
   font-weight: 500;
 }
 .wish{
+  padding:7px 30px;
   border: 2px solid white;
   background-color: white;
   font-weight: 500;
+  background-color: #00BEC7;
+}
+.bi{
+  font-size: 25px;
+  color:white;
 }
 .cart:hover{
   background-color: white;
@@ -119,9 +128,9 @@ button:hover{
   font-weight: 700;
 }
 .wish:hover{
-  background-color: teal;
   color: white;
   font-weight: 700;
+
 }
 @media screen and (max-width:750px){
   .wrapper{
